@@ -1,0 +1,46 @@
+@startuml
+Epreuve "1" o-- "0..n" Participant
+Epreuve "1" --* "0..n" Passage
+Passage "0..2" *-- "1" Participant
+Participant "1" o-- "0..n" Catégorie
+Participant "1" o-- "0..n" Profil
+
+class Epreuve {
+-id
++date
++lieu
++participants
+}
+
+class Participant {
+-id
+#catégorie
+#profil
++nom
++prénom
++date de naissance
++photo
++adresse mail
+}
+
+class Passage {
+-id
+#temps
+#numéro
++participants
+}
+
+class Catégorie {
+-id
++nom
++participants
+
+}
+
+class Profil {
+-id
++nom
++participants
+
+}
+@enduml
