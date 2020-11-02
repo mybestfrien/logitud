@@ -1,10 +1,10 @@
 <?php
 namespace App\models;
 
-require '../db/connectDb.php';
+use App\db\Db;
 use \PDO;
 
-class createConnexion {
+class model extends Db {
     private $name;
     private $user;
     private $pass;

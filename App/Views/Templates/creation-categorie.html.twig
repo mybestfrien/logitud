@@ -1,0 +1,49 @@
+{% extends "base.html.twig" %}
+{% block main %}
+<div class="container-fluid align-content-center d-flex block-txt flex-column pos-form-1">
+    <p>Liste des catégories existantes</p>
+    <form class="d-flex flex-column">
+        <label>
+            <input type="button" name="cat1" value="M1">
+        </label>
+        <label>
+            <input type="button" name="cat1" value="M2">
+        </label>
+        <label>
+            <input type="button" name="cat1" value="M3">
+        </label>
+        <label>
+            <input type="button" name="cat1" value="Sénior">
+        </label>
+        <label>
+            <input type="button" name="cat1" value="V">
+        </label>
+        <label>
+            <input type="button" name="cat1" value="Snow">
+        </label>
+        <label>
+            <input type="button" name="cat1" value="Nouvelle Glisse (NG)">
+        </label>
+    </form>
+</div>
+<div class="container-fluid fond d-flex flex-column">
+    <div class="container-fluid fond">
+        <div class="align-content-center d-flex flex-column pos-form">
+            <form class="d-flex flex-column">
+                <p>Nouvelle catégorie :</p>
+                <label>
+                    <input type="text" name="newCat" placeholder="Entre le nom de ta catégorie">
+                </label>
+            </form>
+        </div>
+        <div class="container-fluid d-flex justify-content-between block-btn">
+            <button><a href="http://localhost:8000/categorie">Retour</a></button>
+            <form method="post">
+                <label>
+                    <input type="submit" value="Valider">
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

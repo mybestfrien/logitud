@@ -1,12 +1,17 @@
 <?php
 
+use App\controllers\CategorieController;
+use App\controllers\CreationCategorieController;
+use App\controllers\CreationParticipantController;
+use App\controllers\CreationProfilController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use App\Controllers\EpreuveController;
-use App\Controllers\HomeController;
-use App\Controllers\ParticipantController;
-use App\Controllers\ProfilController;
-use App\Controllers\ResultatsController;
+use \App\controllers\EpreuveController;
+use \App\controllers\HomeController;
+use \App\controllers\ParticipantController;
+use \App\controllers\ProfilController;
+use \App\controllers\ResultatsController;
+use \App\controllers\CreationEpreuveController;
 
 use function FastRoute\simpleDispatcher;
 
@@ -16,11 +21,17 @@ $request = Request::createFromGlobals();
 
 $dispatcher = simpleDispatcher(
     function (FastRoute\RouteCollector $r) {
-        $r->addRoute('GET', '/home/{test}', [new HomeController(), 'home']);
-        $r->addRoute('GET', '/participant', [new ParticipantController(), 'participant']);
-        $r->addRoute('GET', '/epreuve', [new EpreuveController(), 'epreuve']);
-        $r->addRoute('GET', '/profil', [new ProfilController(), 'profil']);
-        $r->addRoute('GET', '/resultats', [new ResultatsController(), 'resultats']);
+        $r->addRoute('GET', '/home', [new HomeController(), 'TwigTest']);
+        $r->addRoute('GET', '/participant', [new ParticipantController(), 'TwigTest']);
+        $r->addRoute('GET', '/epreuve', [new EpreuveController(), 'TwigTest']);
+        $r->addRoute('GET', '/profil', [new ProfilController(), 'TwigTest']);
+        $r->addRoute('GET', '/resultats', [new ResultatsController(), 'TwigTest']);
+        $r->addRoute('GET', '/categorie', [new CategorieController(), 'TwigTest']);
+        $r->addRoute('GET','/creation-epreuve', [new CreationEpreuveController(), 'TwigTest']);
+        $r->addRoute('GET','/creation-categorie', [new CreationCategorieController(), 'TwigTest']);
+        $r->addRoute('GET','/creation-profil', [new CreationProfilController(), 'TwigTest']);
+        $r->addRoute('GET','/creation-participant', [new CreationParticipantController(), 'TwigTest']);
+        $r->addRoute('POST','/creation-participant', [new CreationParticipantController(), 'CreationParticipant']);
     }
 );
 
@@ -57,4 +68,4 @@ switch ($routeInfo[0]) {
         call_user_func_array($handler, [$request]);
         break;
 }
-dump($request);
+

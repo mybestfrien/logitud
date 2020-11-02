@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\controllers;
 class ResultatsController
 {
 
@@ -8,7 +8,7 @@ class ResultatsController
      * ResultatsController constructor.
      */
     public function resultats(){
-        echo "Résultats";
+        //echo "Résultats";
     }
     public function TwigTest() {
         $twigtest = new ConfigTwig();

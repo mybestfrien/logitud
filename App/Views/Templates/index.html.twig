@@ -1,4 +1,69 @@
 {% extends "base.html.twig" %}
-<header>{{ include('header.html.twig') }}</header>
-
-<footer>{{ include('footer.html.twig') }}</footer>
+{% block main %}
+    <h2 class="d-flex justify-content-center pad-left-20">Bienvenu à notre nouveau {{ id_epreuve.nom }}
+        !</h2>
+    <div class="container-fluid align-content-center d-flex ">
+        <p class="block-txt">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea
+            takimata sanctus est Lorem ipsum dolor sit amet.
+            <br>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea
+            takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div class="container-fluid fond flex-column">
+        <div class="d-flex container-fluid justify-content-center">
+            <h3>Un petit point sur le classement</h3>
+        </div>
+        <div class="d-flex container justify-content-between">
+            <nav class="d-flex container justify-content-between">
+                <ul class="nav d-flex nav-pills nav-fill container justify-content-between">
+                    <li>
+                        <a class="nav-item nav-link" href="#resultats"><img class="img-fluid icon"
+                                                                            src="../../../assets/images/trophee.png"
+                                                                            alt="classement-général"></a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link" href="#resultats"><img style="width: 130px;" class="img-fluid icon"
+                                                                            src="../../../assets/images/profil.png"
+                                                                            alt="classement-profil"> </a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link" href="#resultats"><img style="width: 150px;" class="img-fluid icon"
+                                                                            src="../../../assets/images/catégorie.png"
+                                                                            alt="classement-catégorie"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="m-t-20" id="resultats">
+            <div class="resultat">
+                <span class="nb-resultat">1</span>
+                <span class="nb-resultat">NOM</span><span class="nb-resultat">PRENOM</span><span class="nb-resultat">PROFIL</span><span
+                        class="nb-resultat">CATÉGORIE</span>
+            </div>
+            <div class="resultat">
+                <span class="nb-resultat">2</span>
+                <span class="nb-resultat">NOM</span><span class="nb-resultat">PRENOM</span><span class="nb-resultat">PROFIL</span><span
+                        class="nb-resultat">CATÉGORIE</span>
+            </div>
+            <div class="resultat">
+                <span class="nb-resultat">3</span>
+                <span class="nb-resultat">NOM</span><span class="nb-resultat">PRENOM</span><span class="nb-resultat">PROFIL</span><span
+                        class="nb-resultat">CATÉGORIE</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <div class="container-fluid align-content-center d-flex block-txt flex-column pos-h1-2">
+        <h1>Création d'un participant</h1>
+        <div class="container-fluid block-txt pos-form2">
+            <form class="d-flex" method="post" action="creation-participant" enctype="multipart/form-data">
+                <div class="d-flex flex-column">
+                    <div class="design-photo"></div>
+                    <div class="d-flex">
+                        <input name="photo" type="file"/>
+                        <input class="resize-input" type="reset" value="Supprimer" />
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <input type="text" class="ht-input" name="nom" placeholder="Votre nom de famille" />
+                    <input type="text" class="ht-input" name="prenom" placeholder="Votre prénom" />
+                    <input type="text" class="ht-input" name="e-mail" placeholder="Votre adresse mail" />
+                    <input type="date" class="ht-input" name="date" placeholder="Votre date de naissance" />
+                </div>
+                <div>
+                    <label>Choisissez votre catégorie :
+                    <select name="cat1" id="cat-select">
+                        <option value="">--Choisissez votre option--</option>
+                        <option value="M1">M1</option>
+                        <option value="M2">M2</option>
+                        <option value="M3">M3</option>
+                        <option value="Sénior">Sénior</option>
+                        <option value="V">V</option>
+                        <option value="Snow">Snow</option>
+                        <option value="Nouvelle Glisse (NG)">Nouvelle Glisse (NG)</option>
+                        <option value="newCat"></option>
+                    </select>
+                    </label>
+                </div>
+                <div>
+                    <label>Choisissez votre profil :
+                        <select name="prof1" id="cat-select">
+                            <option value="">--Choisissez votre option--</option>
+                            <option value="ASVP : ex-pervenches">ASVP : ex-pervenches</option>
+                            <option value="Open: conjoints / enfants">Open: conjoints / enfants</option>
+                            <option value="Gardes-champêtres">Gardes-champêtres</option>
+                            <option value="newProf"></option>
+                        </select>
+                    </label>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid fond">
+        <div class="block-tr"></div>
+        <div class="container-fluid d-flex justify-content-between block-btn mar-top">
+            <button><a href="http://localhost:8000/participant">Retour</a></button>
+                <label>
+                    <input type="submit" value="Valider">
+                </label>
+            </form>
+        </div>
+    </div>
+{% endblock %}

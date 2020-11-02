@@ -5,7 +5,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class HomeController {
     public function home($request){
-        echo "Home";
+        //echo "Home";
     }
     public function TwigTest() {
         $twigtest = new ConfigTwig();

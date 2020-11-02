@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+{% block main %}
+<div class="container-fluid d-flex block-txt justify-content-center">
+    <h1 class="d-flex">Création d'une épreuve</h1>
+</div>
+<div class="container-fluid fond d-flex flex-column">
+    <form class="d-flex container-fluid justify-content-between">
+        <label class="d-flex flex-column">
+            Indiquer le nom de l'épreuve :
+            <input name="nom" type="text" placeholder="Indiquer le nom de l'épreuve" aria-label="Indiquer le nom de l'épreuve">
+        </label>
+        <label class="d-flex flex-column">
+            <span>Indiquer le lieu de l'épreuve : <br>
+                <input class="cp" name="CP" type="text" placeholder="CP" aria-label="CP">
+                <input class="ville" name="Ville" type="text" placeholder="Indiquer le lieu de l'épreuve" aria-label="Indiquer le lieu de l'épreuve">
+            </span>
+        </label>
+        <label class="d-flex flex-column">
+            Choisissez la date de l'épreuve :
+            <input name="date" type="date" placeholder="Choisissez la date de l'épreuve" aria-label="Choisissez la date de l'épreuve">
+        </label>
+    </form>
+    <div class="container-fluid d-flex justify-content-between block-btn">
+        <button><a href="http://localhost:8000/epreuve">Retour</a></button>
+        <button><a>Valider l'épreuve</a></button>
+    </div>
+</div>
+
+{% endblock %}

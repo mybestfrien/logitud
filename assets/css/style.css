@@ -1,0 +1,209 @@
+/*********************************************** Tous les styles pour la page header : ********************************/
+
+.no-wrap {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.wdt-100 {
+    width: 90%;
+    padding: 0;
+}
+
+.wdt-20 a{
+    width: 5%;
+    padding: 0;
+}
+
+#pills-tabContent {
+    visibility: hidden;
+}
+
+.mar-left-20 {
+    width: 30%!important;
+}
+
+/****************************************** Tous les styles pour la page index : ***************************************/
+
+.block-txt {
+    width: 900px;
+    height: 400px;
+    margin-left: 25%;
+    padding: 2% 0 2% 0;
+    text-indent: 40px;
+}
+
+.fond {
+    background-image: linear-gradient(to left top, #A32AE0, #5A3BCD);
+    width: -moz-max-content;
+    height: 800px;
+}
+
+.m-t-20 {
+    margin-top: 60px;
+}
+
+.pad-left-20 {
+    padding-left: 20%;
+}
+
+.resultat {
+    width: 100%;
+    height: 80px;
+    border: 1px solid darkred;
+    align-items: center;
+    display: flex;
+}
+
+.nb-resultat {
+    height: 80px;
+    width: fit-content;
+    font-size: xxx-large;
+    padding: 0 8% 0 2%;
+}
+
+h2 {
+    margin-top: 3%!important;
+    margin-bottom: 3%!important;
+    text-indent: -40px;
+}
+
+h3 {
+    margin-top: 3%!important;
+    margin-bottom: 3%!important;
+}
+
+.icon {
+    width: 100px;
+}
+
+/*********************************************** Tous les styles pour la page epreuve : *****************************/
+
+.titre-position {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -3%;
+}
+
+.creer-epreuve {
+    position: absolute;
+    margin-left: 68%;
+    margin-top: 3%;
+}
+
+/***************************************** Tous les styles pour la page footer : ***********************************/
+
+.position-copy {
+    margin-left: 84%;
+}
+
+/***************************************** Tous les styles pour la page creation-épreuve : ***************************/
+
+input {
+    width: 300px;
+    height: auto;
+}
+
+.cp {
+    width: 50px;
+}
+
+.ville {
+    width: 250px;
+}
+
+.block-btn {
+    margin-top: 50%;
+    width: 100%;
+    height: auto;
+}
+/******************************************Tous les styles pour la page creation-categorie : *******************/
+
+.pos-form {
+    margin-left: 40%;
+}
+.pos-form-1 {
+    margin-left: 36%!important;
+}
+
+/******************************************Tous les styles pour la page participant : ************************/
+
+.mini-icon {
+    width: 20px;
+}
+
+.mini-mini-icon {
+    width: 15px;
+}
+
+.wdt-100px {
+    width: 200px;
+}
+
+.pos-td {
+    margin-left: 15%!important;
+    margin-top: 24.8%;
+}
+
+tr, td {
+    border: black 1px solid;
+}
+
+td a {
+    display: flex;
+    justify-content: center;
+}
+
+.pos-h1 {
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.block-tr {
+    height: 200px;
+}
+
+.block-btn2 {
+    margin-top: 40%;
+}
+
+.title {
+    text-align: center;
+}
+
+/***************************************Tous les styles de la page creation-participant*********************/
+
+.resize-input {
+    width: 150px;
+}
+
+.mar-none {
+    padding: 0!important;
+    margin: -7.6% 0 0 0;
+}
+
+.ht-input {
+    margin-bottom: 19%!important;
+}
+
+.mar-top {
+    margin-top: 40% !important;
+}
+
+.pos-form2 {
+    margin-top: 25%;
+}
+
+.pos-h1-2 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.design-photo {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}

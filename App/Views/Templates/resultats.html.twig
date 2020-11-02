@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <div class="container-fluid align-content-center d-flex block-txt justify-content-center">
+    <h1>Le classement de {{ user.name}} </h1>
+    </div>
+    <div id="resultats" role="table" style="border: 1px solid darkred; width: 100%; height: 100vh; z-index: 1;">
+
+    </div>
+    <div class="container-fluid fond" style="margin-top: -20%; z-index: -2;">
+        <div class="block-tr"></div>
+        <div class="container-fluid d-flex justify-content-between block-btn mar-top">
+            <input type="button" name="donnees" accesskey="id_resultat" value="Importer fichier" />
+            <input type="submit" value="Envoyer" />
+        </div>
+    </div>
+{% endblock %}
